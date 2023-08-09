@@ -1,0 +1,89 @@
+import Image from "next/image";
+import React from "react";
+
+function Section1() {
+  return (
+    <div
+      className="bg-cover relative bg-center"
+      style={{
+        backgroundImage: `url( /section-section-background.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        height: "100vh",
+      }}>
+      <div className="relative">
+        <Image src="/nation-build.png" width={1400} height={400} />
+        <h1 className="text-slate-200 absolute top-1/2  left-[37%] transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold">
+          A Nation Building Program
+        </h1>
+      </div>
+
+      <div className="flex content-center">
+        <Image className=" text-center" src="/earn.png" width={700} height={100} />
+      </div>
+    </div>
+  );
+}
+
+export default Section1;
+{
+  /* 
+          <div className="absolute left-64 ml-6   bottom-30 w-82">
+            <h1 className="text-slate-200   text-4xl font-bold">The Program in a Nutshell</h1>
+            <h1 className=" text-slate-200 mt-1 font-sans font-bold text-lg ">Earn While You Learn</h1>
+            <p className="text-slate-200 mt-2 text-xl">
+              In this brand-new type of curriculum, students will <br /> learn how to make money and boost exports in
+              the
+              <br />
+              classroom and will begin doing so within six months
+              <br /> of the program beginning. It resembles a cross
+              <br /> between a corporate venture and an educational <br /> project.
+            </p>
+          </div> */
+}
+import React from "react";
+import Image from "next/image";
+function Header() {
+  return (
+    <>
+      <div className="relative">
+        <div
+          className=""
+          style={{
+            backgroundImage: `url( /header-background.png)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            height: "100vh",
+            width: "full",
+          }}>
+          <Image className="absolute mt-8 bottom-0 right-0" src="/vertualglass.png" width={700} height={952} />
+        </div>
+        <div className="relative">
+          <Image className="absolute bottom-3 ml-14 left-[-50px] " src="/Frame 6.png" width={420} height={100} />
+          <div className="absolute w-80 ml-32  left-[-80px] bottom-4">
+            <h1 className="h1 text-slate-300 font-sans font-bold text-lg ">Become</h1>
+            <h1 className="text-slate-300 text-4xl font-bold">Certified Web 3.0 and Metaverse Developer</h1>
+            <p className="text-slate-300 mt-2 text-xl">
+              A One and Quarter Years Panaverse DAO Earn as you Learn Program Getting Ready for the Next Generation of
+              the Internet Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI), Cloud, Edge, Ambient
+              Computing/IoT, Network Automation, and Bioinformatics Technologies
+            </p>
+            <button
+              className="mt-4 ml-40 text-slate-200 hover:font-bold font-semibold "
+              style={{
+                backgroundImage: `url( /button.png)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+                height: "44px",
+                width: "130px",
+              }}>
+              Syllabus
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Header;
